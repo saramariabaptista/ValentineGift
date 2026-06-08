@@ -5,13 +5,21 @@ box-sizing:border-box;
 }
 
 body{
+
 overflow:hidden;
+
 background:#050404;
+
+font-family:
+
+Georgia,
+serif;
+
 }
 
-/* ================= */
+/* ========================= */
 /* ENTRADA */
-/* ================= */
+/* ========================= */
 
 .entrada{
 
@@ -33,71 +41,76 @@ align-items:center;
 
 }
 
-.entrada::before{
+/* imagem da capa */
 
-content:"";
+.hero{
 
 position:absolute;
 
 inset:0;
 
-background:
+width:100%;
 
-url("./assets/entrada/entrada.jpg");
+height:100%;
 
-background-size:
+/* ocupa tela */
 
-min(
-170vh,
-100vw
-);
+object-fit:cover;
 
-background-repeat:
+/* mantém composição */
 
-no-repeat;
-
-background-position:
-
-center center;
-
-/* aproxima */
-
-transform:
-
-scale(1.08);
+object-position:center center;
 
 }
-/* área da tampinha */
+
+/* área invisível */
 
 #entrar{
 
 position:absolute;
 
-/* posição calibrada */
+/* AJUSTE DA TAMPINHA */
 
-left:67%;
+left:65%;
 
-bottom:6%;
+top:84%;
 
-transform:
+/* tamanho */
 
-translateX(-50%);
+width:110px;
 
-width:90px;
+height:110px;
 
-height:90px;
+/* invisível */
+
+background:none;
+
+border:none;
+
+box-shadow:none;
+
+outline:none;
 
 cursor:pointer;
 
-z-index:10;
+transform:
+
+translate(
+-50%,
+-50%
+);
+
+z-index:999;
 
 }
 
-/* ================= */
+/* ========================= */
 /* MENU */
-/* ================= */
+/* ========================= */
 
 .menu{
+
+width:100vw;
 
 height:100vh;
 
@@ -110,8 +123,11 @@ align-items:center;
 background:
 
 linear-gradient(
+
 #0d0a09,
+
 #1a0d0a
+
 );
 
 }
@@ -128,7 +144,7 @@ display:flex;
 
 flex-direction:column;
 
-gap:32px;
+gap:28px;
 
 }
 
@@ -150,7 +166,8 @@ clamp(
 
 font-family:
 
-Georgia;
+Georgia,
+serif;
 
 cursor:pointer;
 
@@ -170,39 +187,37 @@ color:
 
 }
 
-/* celular */
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
 
 @media(max-width:900px){
 
-.entrada{
+.hero{
 
-background-position:
+object-position:
 
-center center;
+center;
 
 }
 
 #entrar{
 
-position:absolute;
+left:70%;
 
-z-index:50;
+top:87%;
 
-/* TAMPA REAL */
+width:80px;
 
-left:68%;
+height:80px;
 
-top:84%;
+}
 
-width:95px;
+.menu-box button{
 
-height:95px;
+font-size:
 
-transform:
-
-translate(-50%,-50%);
-
-cursor:pointer;
+28px;
 
 }
 
