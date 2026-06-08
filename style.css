@@ -23,22 +23,50 @@ height:100vh;
 
 overflow:hidden;
 
-background:
+background:#050404;
 
-url("./assets/entrada/entrada.jpg")
+display:flex;
 
-center center /
+justify-content:center;
 
-auto 100%
-
-no-repeat;
-
-background-color:
-
-#050404;
+align-items:center;
 
 }
 
+.entrada::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+
+url("./assets/entrada/entrada.jpg");
+
+background-size:
+
+min(
+170vh,
+100vw
+);
+
+background-repeat:
+
+no-repeat;
+
+background-position:
+
+center center;
+
+/* aproxima */
+
+transform:
+
+scale(1.08);
+
+}
 /* área da tampinha */
 
 #entrar{
@@ -158,21 +186,23 @@ center center;
 
 position:absolute;
 
-/* tampa real */
+z-index:50;
 
-left:63%;
+/* TAMPA REAL */
 
-bottom:12%;
+left:68%;
 
-width:120px;
+top:84%;
 
-height:120px;
+width:95px;
 
-cursor:pointer;
+height:95px;
 
 transform:
 
 translate(-50%,-50%);
+
+cursor:pointer;
 
 }
 
