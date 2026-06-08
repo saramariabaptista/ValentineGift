@@ -7,10 +7,18 @@ document.querySelector(".entrada")
 const menu =
 document.querySelector(".menu")
 
-entrar.onclick=()=>{
+entrar.addEventListener(
+"click",
 
-entrada.style.display="none"
+()=>{
 
-menu.classList.remove("escondido")
+entrada.style.display=
+"none"
+
+menu.classList.remove(
+"escondido"
+)
 
 }
+
+)
