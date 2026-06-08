@@ -23,54 +23,43 @@ height:100vh;
 
 overflow:hidden;
 
-background:#050404;
+/* usa a arte como capa */
 
-}
+background-image:
 
-.entrada-img{
+url("./assets/entrada/entrada.jpg");
 
-position:absolute;
-
-top:50%;
-
-left:50%;
-
-/* zoom */
-
-width:108vw;
-
-height:108vh;
-
-transform:
-
-translate(
--50%,
--50%
-);
-
-object-fit:
+background-size:
 
 cover;
 
-/* move um pouco */
+/* ligeiro ajuste */
 
-object-position:
+background-position:
 
-center center;
+center 42%;
+
+background-repeat:
+
+no-repeat;
 
 }
 
-/* tampa */
+/* área da tampinha */
 
 #entrar{
 
 position:absolute;
 
-/* AJUSTE */
+/* posição calibrada */
 
-left:66.5%;
+left:67%;
 
-bottom:8%;
+bottom:6%;
+
+transform:
+
+translateX(-50%);
 
 width:90px;
 
@@ -78,9 +67,7 @@ height:90px;
 
 cursor:pointer;
 
-background:none;
-
-z-index:5;
+z-index:10;
 
 }
 
@@ -119,7 +106,7 @@ display:flex;
 
 flex-direction:column;
 
-gap:30px;
+gap:32px;
 
 }
 
@@ -145,11 +132,19 @@ Georgia;
 
 cursor:pointer;
 
+transition:.25s;
+
 }
 
 .menu-box button:hover{
 
-color:#D4A017;
+transform:
+
+translateX(10px);
+
+color:
+
+#D4A017;
 
 }
 
@@ -157,19 +152,19 @@ color:#D4A017;
 
 @media(max-width:900px){
 
-.entrada-img{
+.entrada{
 
-width:130vw;
+background-position:
 
-height:100vh;
+center center;
 
 }
 
 #entrar{
 
-left:70%;
+left:72%;
 
-bottom:9%;
+bottom:8%;
 
 width:70px;
 
