@@ -5,20 +5,13 @@ box-sizing:border-box;
 }
 
 body{
-
-background:#121212;
-
-font-family:
-Georgia,
-serif;
-
 overflow:hidden;
-
+background:#121212;
 }
 
-/* ========================= */
+/* ================= */
 /* ENTRADA */
-/* ========================= */
+/* ================= */
 
 .entrada{
 
@@ -39,74 +32,47 @@ background-size:cover;
 
 background-position:center;
 
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
 }
 
-/* área invisível para clicar */
+/* botão invisível */
 
 #entrar{
 
 position:absolute;
 
-/*
-AJUSTE ESSA POSIÇÃO
-se precisar
-*/
-
-bottom:100px;
+bottom:95px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-width:180px;
+width:170px;
 
-height:180px;
+height:170px;
 
 cursor:pointer;
 
-/* invisível */
-
 background:transparent;
 
-/* DEBUG
-descomenta se quiser enxergar
-
-border:
-2px solid red;
-
-*/
+border:none;
 
 }
 
-/* ========================= */
+/* ================= */
 /* MENU */
-/* ========================= */
+/* ================= */
 
 .menu{
 
-height:100vh;
-
-background:
-
-linear-gradient(
-
-#121212,
-
-#1a0b09
-
-);
-
 display:flex;
+
+justify-content:center;
 
 align-items:center;
 
-justify-content:center;
+height:100vh;
+
+background:#121212;
 
 }
 
@@ -122,11 +88,11 @@ display:flex;
 
 flex-direction:column;
 
-gap:24px;
+gap:28px;
 
 }
 
-.menu button{
+.menu-box button{
 
 background:none;
 
@@ -140,16 +106,10 @@ font-family:Georgia;
 
 cursor:pointer;
 
-transition:.3s;
-
 }
 
-.menu button:hover{
+.menu-box button:hover{
 
 color:#D4A017;
-
-transform:
-
-translateX(12px);
 
 }
