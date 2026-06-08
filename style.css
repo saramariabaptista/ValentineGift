@@ -156,13 +156,23 @@ center center;
 
 #entrar{
 
-left:72%;
+position:absolute;
 
-bottom:8%;
+/* tampa real */
 
-width:70px;
+left:63%;
 
-height:70px;
+bottom:12%;
+
+width:120px;
+
+height:120px;
+
+cursor:pointer;
+
+transform:
+
+translate(-50%,-50%);
 
 }
 
