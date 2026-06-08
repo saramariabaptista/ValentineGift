@@ -8,26 +8,119 @@ body{
 
 overflow:hidden;
 
-background:#0a0606;
-
 font-family:
 
-Georgia,
-serif;
+Georgia;
+
+background:
+
+#140807;
 
 }
 
 /* ================= */
-/* ENTRADA */
-/* ================= */
 
 .entrada{
 
+height:100vh;
+
 position:relative;
 
-width:100vw;
+overflow:hidden;
 
-height:100vh;
+}
+
+/* parede */
+
+.parede{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+#220807,
+
+#3a0a08
+
+);
+
+}
+
+/* polaroid */
+
+.polaroid{
+
+position:absolute;
+
+top:12%;
+
+left:50%;
+
+transform:
+
+translateX(-50%);
+
+width:
+
+min(
+420px,
+70vw
+);
+
+padding:
+
+18px;
+
+background:
+
+#ece3d6;
+
+box-shadow:
+
+0 20px 80px
+
+rgba(
+0,
+0,
+0,
+0.4
+);
+
+}
+
+/* foto */
+
+.foto{
+
+aspect-ratio:
+
+4/5;
+
+background:
+
+#1b1b1b;
+
+}
+
+/* mesa */
+
+.mesa{
+
+position:absolute;
+
+bottom:0;
+
+width:100%;
+
+height:22vh;
+
+background:
+
+#8f5d2e;
 
 display:flex;
 
@@ -35,89 +128,33 @@ justify-content:center;
 
 align-items:center;
 
-background:
-
-radial-gradient(
-
-circle at center,
-
-#24110f 0%,
-
-#090606 100%
-
-);
-
 }
 
-/* ARTE */
-
-.hero{
-
-position:relative;
-
-/* controla tamanho */
-
-height:min(
-92vh,
-920px
-);
-
-width:auto;
-
-max-width:95vw;
-
-object-fit:
-
-contain;
-
-filter:
-
-drop-shadow(
-0 0 50px
-rgba(
-0,
-0,
-0,
-0.5
-)
-
-);
-
-}
-
-/* TAMPINHA */
+/* cerveja */
 
 #entrar{
 
-position:absolute;
+width:100px;
 
-/* calibrado pela arte */
+height:100px;
 
-left:50%;
+border-radius:999px;
 
-bottom:8%;
+background:
 
-transform:
+#D4A017;
 
-translateX(-50%);
+display:flex;
 
-width:110px;
+justify-content:center;
 
-height:110px;
+align-items:center;
+
+font-size:42px;
 
 cursor:pointer;
 
-z-index:50;
-
-/* DEBUG (descomenta se quiser ver)
-border:2px solid red;
-*/
-
 }
-
-/* ================= */
-/* MENU */
-/* ================= */
 
 .menu{
 
@@ -131,13 +168,7 @@ align-items:center;
 
 background:
 
-linear-gradient(
-
-#0c0908,
-
-#1a0c09
-
-);
+#121212;
 
 }
 
@@ -163,61 +194,14 @@ background:none;
 
 border:none;
 
-color:#E7D8C9;
+color:
+
+#E7D8C9;
 
 font-size:
 
-clamp(
-26px,
-3vw,
-42px
-);
-
-font-family:
-
-Georgia,
-serif;
+38px;
 
 cursor:pointer;
-
-transition:.25s;
-
-}
-
-.menu-box button:hover{
-
-color:
-
-#D4A017;
-
-transform:
-
-translateX(10px);
-
-}
-
-/* ================= */
-/* CELULAR */
-/* ================= */
-
-@media(max-width:900px){
-
-.hero{
-
-height:80vh;
-
-max-width:100vw;
-
-}
-
-#entrar{
-
-bottom:10%;
-
-width:80px;
-
-height:80px;
-
-}
 
 }
