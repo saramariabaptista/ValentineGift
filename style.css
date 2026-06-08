@@ -23,25 +23,19 @@ height:100vh;
 
 overflow:hidden;
 
-/* usa a arte como capa */
+background:
 
-background-image:
+url("./assets/entrada/entrada.jpg")
 
-url("./assets/entrada/entrada.jpg");
+center center /
 
-background-size:
-
-cover;
-
-/* ligeiro ajuste */
-
-background-position:
-
-center 42%;
-
-background-repeat:
+auto 100%
 
 no-repeat;
+
+background-color:
+
+#050404;
 
 }
 
